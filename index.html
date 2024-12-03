@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Map</title>
-  <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/StephanWagner/svgMap@v2.10.1/dist/svgMap.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/gh/StephanWagner/svgMap@v2.10.1/dist/svgMap.min.css" rel="stylesheet">
   <link 
     rel="stylesheet" 
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -22,11 +19,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  Leaflet
   <div id="map"></div>
-  <span>Selected Countries List:</span>
-  <ul class="countries-list">
-  </ul>
+  <div class="countries-table">
+    <div class="countries-head">
+      <div class="countries-item">
+        <div class="countries-region">
+          <span>Region</span>
+        </div>
+        <div class="countries-name">
+          <span>Country</span>
+        </div>
+        <div class="countries-iso">
+          <span>ISO</span>
+        </div>
+        <div class="countries-2g">
+          <span>2G</span>
+        </div>
+        <div class="countries-3g">
+          <span>3G</span>
+        </div>
+        <div class="countries-5g">
+          <span>5G</span>
+        </div>
+        <div class="countries-lte">
+          <span>LTE</span>
+        </div>
+        <div class="countries-lte_m">
+          <span>LTE-M</span>
+        </div>
+        <div class="countries-nb_iot">
+          <span>NB-IOT</span>
+        </div>
+      </div>
+    </div>
+    <ul class="countries-list">
+    </ul>
+  </div>
   
 
   <script src="script.js"></script>

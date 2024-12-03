@@ -1,4 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #map { 
   height: 700px; 
   width: 1000px;
+}
+.leaflet-popup {
+  pointer-events: none;
+}
+.countries-table {
+  width: fit-content;
+}
+.countries-head {
+  border-top: 1px solid #000;
+  background-color: rgba(0,0,0,0.1);
+}
+.countries-list {
+  max-height: 320px;
+  overflow: scroll;
+}
+.countries-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #000000;
+}
+.countries-item div {
+  padding: 8px 8px;
+  border-right: 1px solid #000000;
+}
+.countries-name,
+.countries-region {
+  width: 160px;
+}
+.countries-region {
+  border-left: 1px solid #000000;
+}
+.countries-iso,
+.countries-2g,
+.countries-3g,
+.countries-5g,
+.countries-lte,
+.countries-lte_m,
+.countries-nb_iot {
+  width: 80px;
 }
