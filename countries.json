@@ -744,7 +744,16 @@
       "type": "Feature",
       "id": "ARE",
       "properties": {
-        "name": "United Arab Emirates"
+        "name": "United Arab Emirates",
+        "region": "Asia ",
+        "iso": "AE",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -846,7 +855,16 @@
       "type": "Feature",
       "id": "ARG",
       "properties": {
-        "name": "Argentina"
+        "name": "Argentina",
+        "region": "South America",
+        "iso": "AR",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1350,7 +1368,16 @@
       "type": "Feature",
       "id": "ARM",
       "properties": {
-        "name": "Armenia"
+        "name": "Armenia",
+        "region": "Europe",
+        "iso": "AM",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -1444,7 +1471,8 @@
       "type": "Feature",
       "id": "ATA",
       "properties": {
-        "name": "Antarctica"
+        "name": "Antarctica",
+        "region": ""
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4162,7 +4190,16 @@
       "type": "Feature",
       "id": "AUS",
       "properties": {
-        "name": "Australia"
+        "name": "Australia",
+        "region": "Oceania",
+        "iso": "AU",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5146,7 +5183,16 @@
       "type": "Feature",
       "id": "AUT",
       "properties": {
-        "name": "Austria"
+        "name": "Austria",
+        "region": "Europe",
+        "iso": "AT",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -5308,7 +5354,16 @@
       "type": "Feature",
       "id": "AZE",
       "properties": {
-        "name": "Azerbaijan"
+        "name": "Azerbaijan",
+        "region": "Asia",
+        "iso": "AZ",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5504,7 +5559,16 @@
       "type": "Feature",
       "id": "BDI",
       "properties": {
-        "name": "Burundi"
+        "name": "Burundi",
+        "region": "Africa",
+        "iso": "BI",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "false",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -5570,7 +5634,16 @@
       "type": "Feature",
       "id": "BEL",
       "properties": {
-        "name": "Belgium"
+        "name": "Belgium",
+        "region": "Europe",
+        "iso": "BE",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "true"
       },
       "geometry": {
         "type": "Polygon",
@@ -5644,7 +5717,16 @@
       "type": "Feature",
       "id": "BEN",
       "properties": {
-        "name": "Benin"
+        "name": "Benin",
+        "region": "Africa",
+        "iso": "BJ",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -5758,7 +5840,16 @@
       "type": "Feature",
       "id": "BFA",
       "properties": {
-        "name": "Burkina Faso"
+        "name": "Burkina Faso",
+        "region": "Africa",
+        "iso": "BF",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -5928,7 +6019,16 @@
       "type": "Feature",
       "id": "BGD",
       "properties": {
-        "name": "Bangladesh"
+        "name": "Bangladesh",
+        "region": "Asia",
+        "iso": "BD",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -6086,7 +6186,16 @@
       "type": "Feature",
       "id": "BGR",
       "properties": {
-        "name": "Bulgaria"
+        "name": "Bulgaria",
+        "region": "Europe",
+        "iso": "BG",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -6212,7 +6321,16 @@
       "type": "Feature",
       "id": "BHS",
       "properties": {
-        "name": "The Bahamas"
+        "name": "The Bahamas",
+        "region": "North America",
+        "iso": "BS",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6320,7 +6438,16 @@
       "type": "Feature",
       "id": "BIH",
       "properties": {
-        "name": "Bosnia and Herzegovina"
+        "name": "Bosnia and Herzegovina",
+        "region": "Europe",
+        "iso": "BA",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -6422,7 +6549,16 @@
       "type": "Feature",
       "id": "BLR",
       "properties": {
-        "name": "Belarus"
+        "name": "Belarus",
+        "region": "Europe",
+        "iso": "BY",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -6612,7 +6748,16 @@
       "type": "Feature",
       "id": "BLZ",
       "properties": {
-        "name": "Belize"
+        "name": "Belize",
+        "region": "South America",
+        "iso": "BZ",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -6706,7 +6851,16 @@
       "type": "Feature",
       "id": "BMU",
       "properties": {
-        "name": "Bermuda"
+        "name": "Bermuda",
+        "region": "North America",
+        "iso": "BM",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -7064,7 +7218,16 @@
       "type": "Feature",
       "id": "BOL",
       "properties": {
-        "name": "Bolivia"
+        "name": "Bolivia",
+        "region": "South America",
+        "iso": "BO",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -7318,7 +7481,16 @@
       "type": "Feature",
       "id": "BRA",
       "properties": {
-        "name": "Brazil"
+        "name": "Brazil",
+        "region": "South America",
+        "iso": "BR",
+        "network_count": 5,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -8144,7 +8316,16 @@
       "type": "Feature",
       "id": "BRN",
       "properties": {
-        "name": "Brunei"
+        "name": "Brunei",
+        "region": "tba",
+        "iso": "BN",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -8190,7 +8371,16 @@
       "type": "Feature",
       "id": "BTN",
       "properties": {
-        "name": "Bhutan"
+        "name": "Bhutan",
+        "region": "Asia",
+        "iso": "BT",
+        "network_count": 1,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -8256,7 +8446,16 @@
       "type": "Feature",
       "id": "BWA",
       "properties": {
-        "name": "Botswana"
+        "name": "Botswana",
+        "region": "Africa",
+        "iso": "BW",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -8430,7 +8629,16 @@
       "type": "Feature",
       "id": "CAF",
       "properties": {
-        "name": "Central African Republic"
+        "name": "Central African Republic",
+        "region": "Africa",
+        "iso": "CF",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "false",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -8692,7 +8900,16 @@
       "type": "Feature",
       "id": "CAN",
       "properties": {
-        "name": "Canada"
+        "name": "Canada",
+        "region": "North America",
+        "iso": "CA",
+        "network_count": 7,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -11992,7 +12209,16 @@
       "type": "Feature",
       "id": "CHE",
       "properties": {
-        "name": "Switzerland"
+        "name": "Switzerland",
+        "region": "Europe",
+        "iso": "CH",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -12102,7 +12328,16 @@
       "type": "Feature",
       "id": "CHL",
       "properties": {
-        "name": "Chile"
+        "name": "Chile",
+        "region": "South America",
+        "iso": "CL",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12578,7 +12813,16 @@
       "type": "Feature",
       "id": "CHN",
       "properties": {
-        "name": "China"
+        "name": "China",
+        "region": "Asia",
+        "iso": "CN",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13558,7 +13802,16 @@
       "type": "Feature",
       "id": "CIV",
       "properties": {
-        "name": "Ivory Coast"
+        "name": "Ivory Coast",
+        "region": "Africa",
+        "iso": "CI",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -13756,7 +14009,16 @@
       "type": "Feature",
       "id": "CMR",
       "properties": {
-        "name": "Cameroon"
+        "name": "Cameroon",
+        "region": "Africa",
+        "iso": "CM",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -14014,7 +14276,16 @@
       "type": "Feature",
       "id": "COD",
       "properties": {
-        "name": "Democratic Republic of the Congo"
+        "name": "Democratic Republic of the Congo",
+        "region": "Africa",
+        "iso": "CD",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -14516,7 +14787,16 @@
       "type": "Feature",
       "id": "COG",
       "properties": {
-        "name": "Republic of the Congo"
+        "name": "Republic of the Congo",
+        "region": "Africa",
+        "iso": "CG",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -14726,7 +15006,16 @@
       "type": "Feature",
       "id": "COL",
       "properties": {
-        "name": "Colombia"
+        "name": "Colombia",
+        "region": "South America",
+        "iso": "CO",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -15140,7 +15429,16 @@
       "type": "Feature",
       "id": "CRI",
       "properties": {
-        "name": "Costa Rica"
+        "name": "Costa Rica",
+        "region": "South America",
+        "iso": "CR",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -15298,7 +15596,16 @@
       "type": "Feature",
       "id": "CUB",
       "properties": {
-        "name": "Cuba"
+        "name": "Cuba",
+        "region": "North America",
+        "iso": "CU",
+        "network_count": 1,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -15480,7 +15787,8 @@
       "type": "Feature",
       "id": "-99",
       "properties": {
-        "name": "Northern Cyprus"
+        "name": "Northern Cyprus",
+        "region": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15558,7 +15866,16 @@
       "type": "Feature",
       "id": "CYP",
       "properties": {
-        "name": "Cyprus"
+        "name": "Cyprus",
+        "region": "Europe",
+        "iso": "CY",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -15632,7 +15949,16 @@
       "type": "Feature",
       "id": "CZE",
       "properties": {
-        "name": "Czech Republic"
+        "name": "Czech Republic",
+        "region": "Europe",
+        "iso": "CZ",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -15786,7 +16112,16 @@
       "type": "Feature",
       "id": "DEU",
       "properties": {
-        "name": "Germany"
+        "name": "Germany",
+        "region": "Europe",
+        "iso": "DE",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "true"
       },
       "geometry": {
         "type": "Polygon",
@@ -16032,7 +16367,16 @@
       "type": "Feature",
       "id": "DJI",
       "properties": {
-        "name": "Djibouti"
+        "name": "Djibouti",
+        "region": "Africa",
+        "iso": "DJ",
+        "network_count": 1,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -16106,7 +16450,16 @@
       "type": "Feature",
       "id": "DNK",
       "properties": {
-        "name": "Denmark"
+        "name": "Denmark",
+        "region": "Europe",
+        "iso": "DK",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "true"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -16222,7 +16575,16 @@
       "type": "Feature",
       "id": "DOM",
       "properties": {
-        "name": "Dominican Republic"
+        "name": "Dominican Republic",
+        "region": "North America",
+        "iso": "DO",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -16340,7 +16702,16 @@
       "type": "Feature",
       "id": "DZA",
       "properties": {
-        "name": "Algeria"
+        "name": "Algeria",
+        "region": "Africa",
+        "iso": "DZ",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -16602,7 +16973,16 @@
       "type": "Feature",
       "id": "ECU",
       "properties": {
-        "name": "Ecuador"
+        "name": "Ecuador",
+        "region": "South America",
+        "iso": "EC",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -16748,7 +17128,16 @@
       "type": "Feature",
       "id": "EGY",
       "properties": {
-        "name": "Egypt"
+        "name": "Egypt",
+        "region": "Africa",
+        "iso": "EG",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -16930,7 +17319,8 @@
       "type": "Feature",
       "id": "ERI",
       "properties": {
-        "name": "Eritrea"
+        "name": "Eritrea",
+        "region": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17056,7 +17446,16 @@
       "type": "Feature",
       "id": "ESP",
       "properties": {
-        "name": "Spain"
+        "name": "Spain",
+        "region": "Europe",
+        "iso": "ES",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "true"
       },
       "geometry": {
         "type": "Polygon",
@@ -17274,7 +17673,16 @@
       "type": "Feature",
       "id": "EST",
       "properties": {
-        "name": "Estonia"
+        "name": "Estonia",
+        "region": "Europe",
+        "iso": "EE",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -17356,7 +17764,16 @@
       "type": "Feature",
       "id": "ETH",
       "properties": {
-        "name": "Ethiopia"
+        "name": "Ethiopia",
+        "region": "Africa",
+        "iso": "ET",
+        "network_count": 1,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -17606,7 +18023,16 @@
       "type": "Feature",
       "id": "FIN",
       "properties": {
-        "name": "Finland"
+        "name": "Finland",
+        "region": "Europe",
+        "iso": "FI",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "true"
       },
       "geometry": {
         "type": "Polygon",
@@ -17772,7 +18198,16 @@
       "type": "Feature",
       "id": "FJI",
       "properties": {
-        "name": "Fiji"
+        "name": "Fiji",
+        "region": "Oceania",
+        "iso": "FJ",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -17884,7 +18319,8 @@
       "type": "Feature",
       "id": "FLK",
       "properties": {
-        "name": "Falkland Islands"
+        "name": "Falkland Islands",
+        "region": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17938,7 +18374,16 @@
       "type": "Feature",
       "id": "FRA",
       "properties": {
-        "name": "France"
+        "name": "France",
+        "region": "Europe",
+        "iso": "FR",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -18178,7 +18623,16 @@
       "type": "Feature",
       "id": "GAB",
       "properties": {
-        "name": "Gabon"
+        "name": "Gabon",
+        "region": "Africa",
+        "iso": "GA",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -18316,7 +18770,16 @@
       "type": "Feature",
       "id": "GBR",
       "properties": {
-        "name": "United Kingdom"
+        "name": "United Kingdom",
+        "region": "Europe",
+        "iso": "GB",
+        "network_count": 8,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -18560,7 +19023,16 @@
       "type": "Feature",
       "id": "GEO",
       "properties": {
-        "name": "Georgia"
+        "name": "Georgia",
+        "region": "Europe",
+        "iso": "GE",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -18670,7 +19142,16 @@
       "type": "Feature",
       "id": "GHA",
       "properties": {
-        "name": "Ghana"
+        "name": "Ghana",
+        "region": "Africa",
+        "iso": "GH",
+        "network_count": 5,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -18784,7 +19265,16 @@
       "type": "Feature",
       "id": "GIN",
       "properties": {
-        "name": "Guinea"
+        "name": "Guinea",
+        "region": "Africa",
+        "iso": "GN",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -19078,7 +19568,16 @@
       "type": "Feature",
       "id": "GMB",
       "properties": {
-        "name": "Gambia"
+        "name": "Gambia",
+        "region": "Africa",
+        "iso": "GM",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -19156,7 +19655,16 @@
       "type": "Feature",
       "id": "GNB",
       "properties": {
-        "name": "Guinea Bissau"
+        "name": "Guinea Bissau",
+        "region": "Africa",
+        "iso": "GW",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -19246,7 +19754,16 @@
       "type": "Feature",
       "id": "GNQ",
       "properties": {
-        "name": "Equatorial Guinea"
+        "name": "Equatorial Guinea",
+        "region": "Africa",
+        "iso": "GQ",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -19288,7 +19805,16 @@
       "type": "Feature",
       "id": "GRC",
       "properties": {
-        "name": "Greece"
+        "name": "Greece",
+        "region": "Europe",
+        "iso": "GR",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -19524,7 +20050,16 @@
       "type": "Feature",
       "id": "GRL",
       "properties": {
-        "name": "Greenland"
+        "name": "Greenland",
+        "region": "Europe",
+        "iso": "GL",
+        "network_count": 1,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -20066,7 +20601,16 @@
       "type": "Feature",
       "id": "GTM",
       "properties": {
-        "name": "Guatemala"
+        "name": "Guatemala",
+        "region": "South America",
+        "iso": "GT",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -20220,7 +20764,16 @@
       "type": "Feature",
       "id": "GUF",
       "properties": {
-        "name": "French Guiana"
+        "name": "French Guiana",
+        "region": "North America",
+        "iso": "GF",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -20310,7 +20863,16 @@
       "type": "Feature",
       "id": "GUY",
       "properties": {
-        "name": "Guyana"
+        "name": "Guyana",
+        "region": "South America",
+        "iso": "GY",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -20484,7 +21046,16 @@
       "type": "Feature",
       "id": "HND",
       "properties": {
-        "name": "Honduras"
+        "name": "Honduras",
+        "region": "South America",
+        "iso": "HN",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -20726,7 +21297,16 @@
       "type": "Feature",
       "id": "HRV",
       "properties": {
-        "name": "Croatia"
+        "name": "Croatia",
+        "region": "Europe",
+        "iso": "HR",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "true"
       },
       "geometry": {
         "type": "Polygon",
@@ -20908,7 +21488,16 @@
       "type": "Feature",
       "id": "HTI",
       "properties": {
-        "name": "Haiti"
+        "name": "Haiti",
+        "region": "North America",
+        "iso": "HT",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -21006,7 +21595,16 @@
       "type": "Feature",
       "id": "HUN",
       "properties": {
-        "name": "Hungary"
+        "name": "Hungary",
+        "region": "Europe",
+        "iso": "HU",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -21144,7 +21742,16 @@
       "type": "Feature",
       "id": "IDN",
       "properties": {
-        "name": "Indonesia"
+        "name": "Indonesia",
+        "region": "tba",
+        "iso": "ID",
+        "network_count": 6,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22208,7 +22815,16 @@
       "type": "Feature",
       "id": "IND",
       "properties": {
-        "name": "India"
+        "name": "India",
+        "region": "Asia",
+        "iso": "IN",
+        "network_count": 8,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -22766,7 +23382,16 @@
       "type": "Feature",
       "id": "IRL",
       "properties": {
-        "name": "Ireland"
+        "name": "Ireland",
+        "region": "Europe",
+        "iso": "IE",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -22832,7 +23457,16 @@
       "type": "Feature",
       "id": "IRN",
       "properties": {
-        "name": "Iran"
+        "name": "Iran",
+        "region": "Asia",
+        "iso": "IR",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -23146,7 +23780,16 @@
       "type": "Feature",
       "id": "IRQ",
       "properties": {
-        "name": "Iraq"
+        "name": "Iraq",
+        "region": "Asia",
+        "iso": "IQ",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -23280,7 +23923,16 @@
       "type": "Feature",
       "id": "ISL",
       "properties": {
-        "name": "Iceland"
+        "name": "Iceland",
+        "region": "Europe",
+        "iso": "IS",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -23374,7 +24026,16 @@
       "type": "Feature",
       "id": "ISR",
       "properties": {
-        "name": "Israel"
+        "name": "Israel",
+        "region": "Asia",
+        "iso": "IL",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -23480,7 +24141,16 @@
       "type": "Feature",
       "id": "ITA",
       "properties": {
-        "name": "Italy"
+        "name": "Italy",
+        "region": "Europe",
+        "iso": "IT",
+        "network_count": 5,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23852,7 +24522,16 @@
       "type": "Feature",
       "id": "JAM",
       "properties": {
-        "name": "Jamaica"
+        "name": "Jamaica",
+        "region": "North America",
+        "iso": "JM",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -23910,7 +24589,16 @@
       "type": "Feature",
       "id": "JOR",
       "properties": {
-        "name": "Jordan"
+        "name": "Jordan",
+        "region": "Asia",
+        "iso": "JO",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -24000,7 +24688,16 @@
       "type": "Feature",
       "id": "JPN",
       "properties": {
-        "name": "Japan"
+        "name": "Japan",
+        "region": "Asia",
+        "iso": "JP",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24284,7 +24981,16 @@
       "type": "Feature",
       "id": "KAZ",
       "properties": {
-        "name": "Kazakhstan"
+        "name": "Kazakhstan",
+        "region": "Asia",
+        "iso": "KZ",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -24746,7 +25452,16 @@
       "type": "Feature",
       "id": "KEN",
       "properties": {
-        "name": "Kenya"
+        "name": "Kenya",
+        "region": "Africa",
+        "iso": "KE",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -24908,7 +25623,16 @@
       "type": "Feature",
       "id": "KGZ",
       "properties": {
-        "name": "Kyrgyzstan"
+        "name": "Kyrgyzstan",
+        "region": "Asia",
+        "iso": "KG",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -25062,7 +25786,16 @@
       "type": "Feature",
       "id": "KHM",
       "properties": {
-        "name": "Cambodia"
+        "name": "Cambodia",
+        "region": "Asia",
+        "iso": "KH",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -25144,7 +25877,16 @@
       "type": "Feature",
       "id": "KOR",
       "properties": {
-        "name": "South Korea"
+        "name": "South Korea",
+        "region": "Asia",
+        "iso": "KR",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -25234,7 +25976,16 @@
       "type": "Feature",
       "id": "CS-KM",
       "properties": {
-        "name": "Kosovo"
+        "name": "Kosovo",
+        "region": "Europe",
+        "iso": "XK",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -25332,7 +26083,16 @@
       "type": "Feature",
       "id": "KWT",
       "properties": {
-        "name": "Kuwait"
+        "name": "Kuwait",
+        "region": "Asia",
+        "iso": "KW",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -25382,7 +26142,16 @@
       "type": "Feature",
       "id": "LAO",
       "properties": {
-        "name": "Laos"
+        "name": "Laos",
+        "region": "Asia",
+        "iso": "LA",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -25544,7 +26313,16 @@
       "type": "Feature",
       "id": "LBN",
       "properties": {
-        "name": "Lebanon"
+        "name": "Lebanon",
+        "region": "Asia",
+        "iso": "LB",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -25602,7 +26380,16 @@
       "type": "Feature",
       "id": "LBR",
       "properties": {
-        "name": "Liberia"
+        "name": "Liberia",
+        "5g": "false",
+        "region": "Africa",
+        "iso": "LR",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "lte": "false",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -25724,7 +26511,16 @@
       "type": "Feature",
       "id": "LBY",
       "properties": {
-        "name": "Libya"
+        "name": "Libya",
+        "region": "Africa",
+        "iso": "LY",
+        "network_count": 1,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "false",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -25962,7 +26758,16 @@
       "type": "Feature",
       "id": "LKA",
       "properties": {
-        "name": "Sri Lanka"
+        "name": "Sri Lanka",
+        "region": "Asia",
+        "iso": "LK",
+        "network_count": 5,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -26016,7 +26821,16 @@
       "type": "Feature",
       "id": "LSO",
       "properties": {
-        "name": "Lesotho"
+        "name": "Lesotho",
+        "region": "Africa",
+        "iso": "LS",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -26078,7 +26892,16 @@
       "type": "Feature",
       "id": "LTU",
       "properties": {
-        "name": "Lithuania"
+        "name": "Lithuania",
+        "region": "Europe",
+        "iso": "LT",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -26168,7 +26991,16 @@
       "type": "Feature",
       "id": "LUX",
       "properties": {
-        "name": "Luxembourg"
+        "name": "Luxembourg",
+        "region": "Europe",
+        "iso": "LU",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",
@@ -26210,7 +27042,16 @@
       "type": "Feature",
       "id": "LVA",
       "properties": {
-        "name": "Latvia"
+        "name": "Latvia",
+        "region": "Europe",
+        "iso": "LV",
+        "network_count": 3,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "true",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",

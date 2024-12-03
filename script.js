@@ -53,7 +53,7 @@ fetch(countriesGeoJSON)
           const countryName = feature.properties.name ? feature.properties.name : '';
           const countryRegion = feature.properties.region ? feature.properties.region : '';
           const countryIso = feature.properties.iso ? feature.properties.iso : '';
-          const networkCount = feature.properties.network_count ? feature.properties.network_count : 0;
+          const networkCount = feature.properties.network_count ? feature.properties.network_count : '';
           const country2g = feature.properties['2g'] === 'true' ? true : false;
           const country3g = feature.properties['3g'] === 'true' ? true : false;
           const country5g = feature.properties['5g'] === 'true' ? true : false;
