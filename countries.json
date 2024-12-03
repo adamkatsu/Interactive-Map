@@ -305,7 +305,15 @@
       "id": "AGO",
       "properties": {
         "name": "Angola",
-        "lte": ""
+        "lte": "false",
+        "region": "Africa",
+        "iso": "AO",
+        "network_count": 2,
+        "2g": "true",
+        "3g": "true",
+        "5g": "false",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -625,7 +633,16 @@
       "type": "Feature",
       "id": "ALB",
       "properties": {
-        "name": "Albania"
+        "name": "Albania",
+        "region": "Europe",
+        "iso": "AL",
+        "network_count": 4,
+        "2g": "true",
+        "3g": "true",
+        "5g": "true",
+        "lte": "true",
+        "lte_m": "false",
+        "nb_iot": "false"
       },
       "geometry": {
         "type": "Polygon",

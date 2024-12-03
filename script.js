@@ -53,6 +53,7 @@ fetch(countriesGeoJSON)
           const countryName = feature.properties.name ? feature.properties.name : '';
           const countryRegion = feature.properties.region ? feature.properties.region : '';
           const countryIso = feature.properties.iso ? feature.properties.iso : '';
+          const networkCount = feature.properties.network_count ? feature.properties.network_count : 0;
           const country2g = feature.properties['2g'] === 'true' ? true : false;
           const country3g = feature.properties['3g'] === 'true' ? true : false;
           const country5g = feature.properties['5g'] === 'true' ? true : false;
@@ -63,6 +64,7 @@ fetch(countriesGeoJSON)
                                 'name': countryName,
                                 'region': countryRegion,
                                 'iso': countryIso,
+                                'count': networkCount,
                                 '2g': country2g,
                                 '3g': country3g,
                                 '5g': country5g,
@@ -106,6 +108,9 @@ fetch(countriesGeoJSON)
               </div>
               <div class="countries-iso">
                 <span>${item.iso}</span>
+              </div>
+              <div class="countries-count">
+                <span>${item.count}</span>
               </div>
               <div class="countries-2g">
                 <span>${item['2g'] ? svgCheck : svgCross}</span>
