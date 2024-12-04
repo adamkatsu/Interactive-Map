@@ -46347,10 +46347,18 @@
     },
     {
       "type": "Feature",
-      "id": "PSE",
+      "id": "PS",
       "properties": {
-        "name": "West Bank",
-        "region": ""
+        "name": "Palestine",
+        "region": "Asia",
+        "iso": "PS",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
