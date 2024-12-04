@@ -37,10 +37,8 @@
 .countries-count {
   width: 120px;
 }
-.countries-region {
-  border-left: 1px solid #000000;
-}
 .countries-iso,
+.countries-num,
 .countries-2g,
 .countries-3g,
 .countries-5g,

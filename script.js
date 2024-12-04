@@ -27,20 +27,22 @@ fetch(countriesGeoJSON)
       onEachFeature: function (feature, layer) {
         // Track whether a country is "selected"
         let isSelected = false;
-        // console.log(feature.properties)
 
         // Highlight on hover
         layer.on('mouseover', function () {
           if (!isSelected) {
               layer.setStyle({ fillOpacity: 0.7 });
           }
+
           const countryName = feature.properties.name; // Assuming `name` property exists
           const countryData = `Hello ${feature.properties.nickname ? feature.properties.nickname : countryName}`; // Replace with actual data source
+
           L.popup()
               .setLatLng(layer.getBounds().getCenter())
               .setContent(`<b>${countryName}</b><br>${countryData}`)
               .openOn(map);
         });
+
         layer.on('mouseout', function () {
           if (!isSelected) {
               layer.setStyle({ fillOpacity: 0.3 });
@@ -49,17 +51,19 @@ fetch(countriesGeoJSON)
 
         // Toggle color on click
         layer.on('click', function () {
-
-          const countryName = feature.properties.name ? feature.properties.name : '';
-          const countryRegion = feature.properties.region ? feature.properties.region : '';
-          const countryIso = feature.properties.iso ? feature.properties.iso : '';
-          const networkCount = feature.properties.network_count ? feature.properties.network_count : '';
-          const country2g = feature.properties['2g'] === 'true' ? true : false;
-          const country3g = feature.properties['3g'] === 'true' ? true : false;
-          const country5g = feature.properties['5g'] === 'true' ? true : false;
-          const countryLte = feature.properties['lte'] === 'true' ? true : false;
-          const countryLteM = feature.properties['lte_m'] === 'true' ? true : false;
-          const countryNbIot = feature.properties['nb_iot'] === 'true' ? true : false;
+          updateData(feature);
+        });
+        function updateData(entry) {
+          const countryName = entry.properties.name ? entry.properties.name : '';
+          const countryRegion = entry.properties.region ? entry.properties.region : '';
+          const countryIso = entry.properties.iso ? entry.properties.iso : '';
+          const networkCount = entry.properties.network_count ? entry.properties.network_count : '';
+          const country2g = entry.properties['2g'] === 't' ? true : false;
+          const country3g = entry.properties['3g'] === 't' ? true : false;
+          const country5g = entry.properties['5g'] === 't' ? true : false;
+          const countryLte = entry.properties['lte'] === 't' ? true : false;
+          const countryLteM = entry.properties['lte_m'] === 't' ? true : false;
+          const countryNbIot = entry.properties['nb_iot'] === 't' ? true : false;
           const countryData = { 
                                 'name': countryName,
                                 'region': countryRegion,
@@ -97,9 +101,12 @@ fetch(countriesGeoJSON)
           </svg>`
 
           document.querySelector('.countries-list').innerHTML = '';
-          for (const item of selectedCountries) {
+          for (const [index, item] of selectedCountries.entries()) {
             document.querySelector('.countries-list').innerHTML += 
             `<div class="countries-item">
+              <div class="countries-num">
+                <span>${index}</span>
+              </div>
               <div class="countries-region">
                 <span>${item.region}</span>
               </div>
@@ -132,8 +139,75 @@ fetch(countriesGeoJSON)
               </div>
             </div>`
           }
-        });
+        }
       }
     }).addTo(map);
+    // Display all countries on page load
+    const allCountries = data.features.map((feature) => ({
+      name: feature.properties.name || '',
+      region: feature.properties.region || '',
+      iso: feature.properties.iso || '',
+      count: feature.properties.network_count || '',
+      '2g': feature.properties['2g'] === 't',
+      '3g': feature.properties['3g'] === 't',
+      '5g': feature.properties['5g'] === 't',
+      lte: feature.properties['lte'] === 't',
+      lte_m: feature.properties['lte_m'] === 't',
+      nb_iot: feature.properties['nb_iot'] === 't',
+    }));
+
+    updateCountriesList(allCountries);
 })
 .catch(error => console.error('Error loading GeoJSON:', error));
+
+// Function to update countries list
+function updateCountriesList(countries) {
+  const svgCheck = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 12L10 17L20 7" stroke="#14AE5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>`;
+  const svgCross = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 6L6 18M6 6L18 18" stroke="#F24822" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>`;
+
+  const countriesList = document.querySelector('.countries-list');
+  countriesList.innerHTML = '';
+
+  countries.forEach((item, index) => {
+    countriesList.innerHTML += `
+      <div class="countries-item">
+        <div class="countries-num">
+          <span>${index + 1}</span>
+        </div>
+        <div class="countries-region">
+          <span>${item.region}</span>
+        </div>
+        <div class="countries-name">
+          <span>${item.name}</span>
+        </div>
+        <div class="countries-iso">
+          <span>${item.iso}</span>
+        </div>
+        <div class="countries-count">
+          <span>${item.count}</span>
+        </div>
+        <div class="countries-2g">
+          <span>${item['2g'] ? svgCheck : svgCross}</span>
+        </div>
+        <div class="countries-3g">
+          <span>${item['3g'] ? svgCheck : svgCross}</span>
+        </div>
+        <div class="countries-5g">
+          <span>${item['5g'] ? svgCheck : svgCross}</span>
+        </div>
+        <div class="countries-lte">
+          <span>${item.lte ? svgCheck : svgCross}</span>
+        </div>
+        <div class="countries-lte_m">
+          <span>${item.lte_m ? svgCheck : svgCross}</span>
+        </div>
+        <div class="countries-nb_iot">
+          <span>${item.nb_iot ? svgCheck : svgCross}</span>
+        </div>
+      </div>`;
+  });
+}

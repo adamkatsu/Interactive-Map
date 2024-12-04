@@ -9,12 +9,12 @@
         "region": "Asia",
         "iso": "AF",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -305,15 +305,15 @@
       "id": "AGO",
       "properties": {
         "name": "Angola",
-        "lte": "false",
+        "lte": "f",
         "region": "Africa",
         "iso": "AO",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -637,12 +637,12 @@
         "region": "Europe",
         "iso": "AL",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -748,12 +748,12 @@
         "region": "Asia ",
         "iso": "AE",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -859,12 +859,12 @@
         "region": "South America",
         "iso": "AR",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1372,12 +1372,12 @@
         "region": "Europe",
         "iso": "AM",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -4194,12 +4194,12 @@
         "region": "Oceania",
         "iso": "AU",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5187,12 +5187,12 @@
         "region": "Europe",
         "iso": "AT",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -5358,12 +5358,12 @@
         "region": "Asia",
         "iso": "AZ",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5563,12 +5563,12 @@
         "region": "Africa",
         "iso": "BI",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "false",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -5638,12 +5638,12 @@
         "region": "Europe",
         "iso": "BE",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "true"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "t"
       },
       "geometry": {
         "type": "Polygon",
@@ -5721,12 +5721,12 @@
         "region": "Africa",
         "iso": "BJ",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -5844,12 +5844,12 @@
         "region": "Africa",
         "iso": "BF",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -6023,12 +6023,12 @@
         "region": "Asia",
         "iso": "BD",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -6190,12 +6190,12 @@
         "region": "Europe",
         "iso": "BG",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -6325,12 +6325,12 @@
         "region": "North America",
         "iso": "BS",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6442,12 +6442,12 @@
         "region": "Europe",
         "iso": "BA",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -6553,12 +6553,12 @@
         "region": "Europe",
         "iso": "BY",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -6752,12 +6752,12 @@
         "region": "South America",
         "iso": "BZ",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -6855,12 +6855,12 @@
         "region": "North America",
         "iso": "BM",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -7222,12 +7222,12 @@
         "region": "South America",
         "iso": "BO",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -7485,12 +7485,12 @@
         "region": "South America",
         "iso": "BR",
         "network_count": 5,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -8320,12 +8320,12 @@
         "region": "tba",
         "iso": "BN",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -8375,12 +8375,12 @@
         "region": "Asia",
         "iso": "BT",
         "network_count": 1,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -8450,12 +8450,12 @@
         "region": "Africa",
         "iso": "BW",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -8633,12 +8633,12 @@
         "region": "Africa",
         "iso": "CF",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "false",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -8904,12 +8904,12 @@
         "region": "North America",
         "iso": "CA",
         "network_count": 7,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12213,12 +12213,12 @@
         "region": "Europe",
         "iso": "CH",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -12332,12 +12332,12 @@
         "region": "South America",
         "iso": "CL",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12817,12 +12817,12 @@
         "region": "Asia",
         "iso": "CN",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13806,12 +13806,12 @@
         "region": "Africa",
         "iso": "CI",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -14013,12 +14013,12 @@
         "region": "Africa",
         "iso": "CM",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -14280,12 +14280,12 @@
         "region": "Africa",
         "iso": "CD",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -14791,12 +14791,12 @@
         "region": "Africa",
         "iso": "CG",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -15010,12 +15010,12 @@
         "region": "South America",
         "iso": "CO",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -15433,12 +15433,12 @@
         "region": "South America",
         "iso": "CR",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -15600,12 +15600,12 @@
         "region": "North America",
         "iso": "CU",
         "network_count": 1,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -15870,12 +15870,12 @@
         "region": "Europe",
         "iso": "CY",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -15953,12 +15953,12 @@
         "region": "Europe",
         "iso": "CZ",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -16116,12 +16116,12 @@
         "region": "Europe",
         "iso": "DE",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "true"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "t"
       },
       "geometry": {
         "type": "Polygon",
@@ -16371,12 +16371,12 @@
         "region": "Africa",
         "iso": "DJ",
         "network_count": 1,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -16454,12 +16454,12 @@
         "region": "Europe",
         "iso": "DK",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "true"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "t"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -16579,12 +16579,12 @@
         "region": "North America",
         "iso": "DO",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -16706,12 +16706,12 @@
         "region": "Africa",
         "iso": "DZ",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -16977,12 +16977,12 @@
         "region": "South America",
         "iso": "EC",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -17132,12 +17132,12 @@
         "region": "Africa",
         "iso": "EG",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -17450,12 +17450,12 @@
         "region": "Europe",
         "iso": "ES",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "true"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "t"
       },
       "geometry": {
         "type": "Polygon",
@@ -17677,12 +17677,12 @@
         "region": "Europe",
         "iso": "EE",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -17768,12 +17768,12 @@
         "region": "Africa",
         "iso": "ET",
         "network_count": 1,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -18027,12 +18027,12 @@
         "region": "Europe",
         "iso": "FI",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "true"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "t"
       },
       "geometry": {
         "type": "Polygon",
@@ -18202,12 +18202,12 @@
         "region": "Oceania",
         "iso": "FJ",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -18378,12 +18378,12 @@
         "region": "Europe",
         "iso": "FR",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -18627,12 +18627,12 @@
         "region": "Africa",
         "iso": "GA",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -18774,12 +18774,12 @@
         "region": "Europe",
         "iso": "GB",
         "network_count": 8,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -19027,12 +19027,12 @@
         "region": "Europe",
         "iso": "GE",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -19146,12 +19146,12 @@
         "region": "Africa",
         "iso": "GH",
         "network_count": 5,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -19269,12 +19269,12 @@
         "region": "Africa",
         "iso": "GN",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -19572,12 +19572,12 @@
         "region": "Africa",
         "iso": "GM",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -19659,12 +19659,12 @@
         "region": "Africa",
         "iso": "GW",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -19758,12 +19758,12 @@
         "region": "Africa",
         "iso": "GQ",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -19809,12 +19809,12 @@
         "region": "Europe",
         "iso": "GR",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20054,12 +20054,12 @@
         "region": "Europe",
         "iso": "GL",
         "network_count": 1,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -20605,12 +20605,12 @@
         "region": "South America",
         "iso": "GT",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -20768,12 +20768,12 @@
         "region": "North America",
         "iso": "GF",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -20867,12 +20867,12 @@
         "region": "South America",
         "iso": "GY",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -21050,12 +21050,12 @@
         "region": "South America",
         "iso": "HN",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -21301,12 +21301,12 @@
         "region": "Europe",
         "iso": "HR",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "true"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "t"
       },
       "geometry": {
         "type": "Polygon",
@@ -21492,12 +21492,12 @@
         "region": "North America",
         "iso": "HT",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -21599,12 +21599,12 @@
         "region": "Europe",
         "iso": "HU",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -21746,12 +21746,12 @@
         "region": "tba",
         "iso": "ID",
         "network_count": 6,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22819,12 +22819,12 @@
         "region": "Asia",
         "iso": "IN",
         "network_count": 8,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -23386,12 +23386,12 @@
         "region": "Europe",
         "iso": "IE",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -23461,12 +23461,12 @@
         "region": "Asia",
         "iso": "IR",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -23784,12 +23784,12 @@
         "region": "Asia",
         "iso": "IQ",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -23927,12 +23927,12 @@
         "region": "Europe",
         "iso": "IS",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -24030,12 +24030,12 @@
         "region": "Asia",
         "iso": "IL",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -24145,12 +24145,12 @@
         "region": "Europe",
         "iso": "IT",
         "network_count": 5,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24526,12 +24526,12 @@
         "region": "North America",
         "iso": "JM",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -24593,12 +24593,12 @@
         "region": "Asia",
         "iso": "JO",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -24692,12 +24692,12 @@
         "region": "Asia",
         "iso": "JP",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24985,12 +24985,12 @@
         "region": "Asia",
         "iso": "KZ",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -25456,12 +25456,12 @@
         "region": "Africa",
         "iso": "KE",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -25627,12 +25627,12 @@
         "region": "Asia",
         "iso": "KG",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -25790,12 +25790,12 @@
         "region": "Asia",
         "iso": "KH",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -25881,12 +25881,12 @@
         "region": "Asia",
         "iso": "KR",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -25980,12 +25980,12 @@
         "region": "Europe",
         "iso": "XK",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -26087,12 +26087,12 @@
         "region": "Asia",
         "iso": "KW",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -26146,12 +26146,12 @@
         "region": "Asia",
         "iso": "LA",
         "network_count": 4,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -26317,12 +26317,12 @@
         "region": "Asia",
         "iso": "LB",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -26381,15 +26381,15 @@
       "id": "LBR",
       "properties": {
         "name": "Liberia",
-        "5g": "false",
+        "5g": "f",
         "region": "Africa",
         "iso": "LR",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "lte": "false",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -26515,12 +26515,12 @@
         "region": "Africa",
         "iso": "LY",
         "network_count": 1,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "false",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -26762,12 +26762,12 @@
         "region": "Asia",
         "iso": "LK",
         "network_count": 5,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -26825,12 +26825,12 @@
         "region": "Africa",
         "iso": "LS",
         "network_count": 2,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -26896,12 +26896,12 @@
         "region": "Europe",
         "iso": "LT",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -26995,12 +26995,12 @@
         "region": "Europe",
         "iso": "LU",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -27046,12 +27046,12 @@
         "region": "Europe",
         "iso": "LV",
         "network_count": 3,
-        "2g": "true",
-        "3g": "true",
-        "5g": "true",
-        "lte": "true",
-        "lte_m": "true",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -27153,7 +27153,16 @@
       "type": "Feature",
       "id": "MAR",
       "properties": {
-        "name": "Morocco"
+        "name": "Morocco",
+        "region": "Africa",
+        "iso": "MA",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -27423,7 +27432,16 @@
       "type": "Feature",
       "id": "MDA",
       "properties": {
-        "name": "Moldova"
+        "name": "Moldova",
+        "region": "Europe",
+        "iso": "MD",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -27545,7 +27563,16 @@
       "type": "Feature",
       "id": "MDG",
       "properties": {
-        "name": "Madagascar"
+        "name": "Madagascar",
+        "region": "Africa",
+        "iso": "MG",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -27755,7 +27782,16 @@
       "type": "Feature",
       "id": "MEX",
       "properties": {
-        "name": "Mexico"
+        "name": "Mexico",
+        "region": "North America",
+        "iso": "MX",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -28449,7 +28485,16 @@
       "type": "Feature",
       "id": "MKD",
       "properties": {
-        "name": "Macedonia"
+        "name": "Macedonia",
+        "region": "Europe",
+        "iso": "MK",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -28531,7 +28576,16 @@
       "type": "Feature",
       "id": "MLI",
       "properties": {
-        "name": "Mali"
+        "name": "Mali",
+        "region": "Africa",
+        "iso": "ML",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -28849,7 +28903,16 @@
       "type": "Feature",
       "id": "MLT",
       "properties": {
-        "name": "Malta"
+        "name": "Malta",
+        "region": "Europe",
+        "iso": "MT",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -28933,7 +28996,16 @@
       "type": "Feature",
       "id": "MMR",
       "properties": {
-        "name": "Myanmar"
+        "name": "Myanmar",
+        "region": "Asia",
+        "iso": "MM",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -29227,7 +29299,16 @@
       "type": "Feature",
       "id": "MNE",
       "properties": {
-        "name": "Montenegro"
+        "name": "Montenegro",
+        "region": "Europe",
+        "iso": "ME",
+        "network_count": 5,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -29313,7 +29394,16 @@
       "type": "Feature",
       "id": "MNG",
       "properties": {
-        "name": "Mongolia"
+        "name": "Mongolia",
+        "region": "Asia",
+        "iso": "MN",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -29627,7 +29717,16 @@
       "type": "Feature",
       "id": "MOZ",
       "properties": {
-        "name": "Mozambique"
+        "name": "Mozambique",
+        "region": "Africa",
+        "iso": "MZ",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -29949,7 +30048,16 @@
       "type": "Feature",
       "id": "MRT",
       "properties": {
-        "name": "Mauritania"
+        "name": "Mauritania",
+        "region": "Africa",
+        "iso": "MR",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -30119,7 +30227,16 @@
       "type": "Feature",
       "id": "MWI",
       "properties": {
-        "name": "Malawi"
+        "name": "Malawi",
+        "region": "Africa",
+        "iso": "MW",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -30245,7 +30362,16 @@
       "type": "Feature",
       "id": "MYS",
       "properties": {
-        "name": "Malaysia"
+        "name": "Malaysia",
+        "region": "tba",
+        "iso": "MY",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -30513,7 +30639,16 @@
       "type": "Feature",
       "id": "NAM",
       "properties": {
-        "name": "Namibia"
+        "name": "Namibia",
+        "region": "Africa",
+        "iso": "NA",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -30703,7 +30838,16 @@
       "type": "Feature",
       "id": "NCL",
       "properties": {
-        "name": "New Caledonia"
+        "name": "New Caledonia",
+        "region": "Oceania",
+        "iso": "NC",
+        "network_count": 1,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -30769,7 +30913,16 @@
       "type": "Feature",
       "id": "NER",
       "properties": {
-        "name": "Niger"
+        "name": "Niger",
+        "region": "Africa",
+        "iso": "NE",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -31015,7 +31168,16 @@
       "type": "Feature",
       "id": "NGA",
       "properties": {
-        "name": "Nigeria"
+        "name": "Nigeria",
+        "region": "Africa",
+        "iso": "NG",
+        "network_count": 5,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -31261,7 +31423,16 @@
       "type": "Feature",
       "id": "NIC",
       "properties": {
-        "name": "Nicaragua"
+        "name": "Nicaragua",
+        "region": "South America",
+        "iso": "NI",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -31483,7 +31654,16 @@
       "type": "Feature",
       "id": "NLD",
       "properties": {
-        "name": "Netherlands"
+        "name": "Netherlands",
+        "region": "Europe",
+        "iso": "NL",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -31553,7 +31733,16 @@
       "type": "Feature",
       "id": "NOR",
       "properties": {
-        "name": "Norway"
+        "name": "Norway",
+        "region": "Europe",
+        "iso": "NO",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -31933,7 +32122,16 @@
       "type": "Feature",
       "id": "NPL",
       "properties": {
-        "name": "Nepal"
+        "name": "Nepal",
+        "region": "Asia",
+        "iso": "NP",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -32039,7 +32237,16 @@
       "type": "Feature",
       "id": "NZL",
       "properties": {
-        "name": "New Zealand"
+        "name": "New Zealand",
+        "region": "Oceania",
+        "iso": "NZ",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -32323,7 +32530,16 @@
       "type": "Feature",
       "id": "OMN",
       "properties": {
-        "name": "Oman"
+        "name": "Oman",
+        "region": "Asia",
+        "iso": "OM",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -32531,7 +32747,16 @@
       "type": "Feature",
       "id": "PAK",
       "properties": {
-        "name": "Pakistan"
+        "name": "Pakistan",
+        "region": "Asia",
+        "iso": "PK",
+        "network_count": 5,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -32809,7 +33034,16 @@
       "type": "Feature",
       "id": "PAN",
       "properties": {
-        "name": "Panama"
+        "name": "Panama",
+        "region": "South America",
+        "iso": "PA",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -33031,7 +33265,16 @@
       "type": "Feature",
       "id": "PER",
       "properties": {
-        "name": "Peru"
+        "name": "Peru",
+        "region": "South America",
+        "iso": "PE",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -33349,7 +33592,16 @@
       "type": "Feature",
       "id": "PHL",
       "properties": {
-        "name": "Philippines"
+        "name": "Philippines",
+        "region": "tba",
+        "iso": "PH",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -33829,7 +34081,16 @@
       "type": "Feature",
       "id": "PNG",
       "properties": {
-        "name": "Papua New Guinea"
+        "name": "Papua New Guinea",
+        "region": "tba",
+        "iso": "PG",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -34181,7 +34442,16 @@
       "type": "Feature",
       "id": "POL",
       "properties": {
-        "name": "Poland"
+        "name": "Poland",
+        "region": "Europe",
+        "iso": "PL",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -34375,7 +34645,16 @@
       "type": "Feature",
       "id": "PRI",
       "properties": {
-        "name": "Puerto Rico"
+        "name": "Puerto Rico",
+        "region": "North America",
+        "iso": "PR",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -34425,7 +34704,8 @@
       "type": "Feature",
       "id": "PRK",
       "properties": {
-        "name": "North Korea"
+        "name": "North Korea",
+        "region": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -34611,7 +34891,16 @@
       "type": "Feature",
       "id": "PRT",
       "properties": {
-        "name": "Portugal"
+        "name": "Portugal",
+        "region": "Europe",
+        "iso": "PT",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -34757,7 +35046,16 @@
       "type": "Feature",
       "id": "PRY",
       "properties": {
-        "name": "Paraguay"
+        "name": "Paraguay",
+        "region": "South America",
+        "iso": "PY",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -34903,7 +35201,16 @@
       "type": "Feature",
       "id": "QAT",
       "properties": {
-        "name": "Qatar"
+        "name": "Qatar",
+        "region": "Asia",
+        "iso": "QA",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -34953,7 +35260,16 @@
       "type": "Feature",
       "id": "ROU",
       "properties": {
-        "name": "Romania"
+        "name": "Romania",
+        "region": "Europe",
+        "iso": "RO",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -35147,12 +35463,12 @@
         "region": "Europe",
         "iso": "RU",
         "network_count": 5,
-        "2g": "true",
-        "3g": "true",
-        "5g": "false",
-        "lte": "true",
-        "lte_m": "false",
-        "nb_iot": "false"
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -37608,7 +37924,16 @@
       "type": "Feature",
       "id": "RWA",
       "properties": {
-        "name": "Rwanda"
+        "name": "Rwanda",
+        "region": "Africa",
+        "iso": "RW",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -37674,7 +37999,8 @@
       "type": "Feature",
       "id": "ESH",
       "properties": {
-        "name": "Western Sahara"
+        "name": "Western Sahara",
+        "region": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -37800,7 +38126,16 @@
       "type": "Feature",
       "id": "SAU",
       "properties": {
-        "name": "Saudi Arabia"
+        "name": "Saudi Arabia",
+        "region": "Asia",
+        "iso": "SA",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -38118,7 +38453,16 @@
       "type": "Feature",
       "id": "SDN",
       "properties": {
-        "name": "Sudan"
+        "name": "Sudan",
+        "region": "Africa",
+        "iso": "SD",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -38448,7 +38792,16 @@
       "type": "Feature",
       "id": "SSD",
       "properties": {
-        "name": "South Sudan"
+        "name": "South Sudan",
+        "region": "Africa",
+        "iso": "SS",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -38714,7 +39067,16 @@
       "type": "Feature",
       "id": "SEN",
       "properties": {
-        "name": "Senegal"
+        "name": "Senegal",
+        "region": "Africa",
+        "iso": "SN",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -38904,7 +39266,16 @@
       "type": "Feature",
       "id": "SLB",
       "properties": {
-        "name": "Solomon Islands"
+        "name": "Solomon Islands",
+        "region": "Oceania",
+        "iso": "SB",
+        "network_count": 1,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -39084,7 +39455,16 @@
       "type": "Feature",
       "id": "SLE",
       "properties": {
-        "name": "Sierra Leone"
+        "name": "Sierra Leone",
+        "region": "Africa",
+        "iso": "SL",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -39186,7 +39566,16 @@
       "type": "Feature",
       "id": "SLV",
       "properties": {
-        "name": "El Salvador"
+        "name": "El Salvador",
+        "region": "South America",
+        "iso": "SV",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -39280,7 +39669,8 @@
       "type": "Feature",
       "id": "-99",
       "properties": {
-        "name": "Somaliland"
+        "name": "Somaliland",
+        "region": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -39390,7 +39780,16 @@
       "type": "Feature",
       "id": "SOM",
       "properties": {
-        "name": "Somalia"
+        "name": "Somalia",
+        "region": "Africa",
+        "iso": "SO",
+        "network_count": 1,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -39548,7 +39947,16 @@
       "type": "Feature",
       "id": "SRB",
       "properties": {
-        "name": "Republic of Serbia"
+        "name": "Republic of Serbia",
+        "region": "Europe",
+        "iso": "RS",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -39746,7 +40154,16 @@
       "type": "Feature",
       "id": "SUR",
       "properties": {
-        "name": "Suriname"
+        "name": "Suriname",
+        "region": "South America",
+        "iso": "SR",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -39864,7 +40281,16 @@
       "type": "Feature",
       "id": "SVK",
       "properties": {
-        "name": "Slovakia"
+        "name": "Slovakia",
+        "region": "Europe",
+        "iso": "SK",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "t"
       },
       "geometry": {
         "type": "Polygon",
@@ -40010,7 +40436,16 @@
       "type": "Feature",
       "id": "SVN",
       "properties": {
-        "name": "Slovenia"
+        "name": "Slovenia",
+        "region": "Europe",
+        "iso": "SI",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "t"
       },
       "geometry": {
         "type": "Polygon",
@@ -40096,7 +40531,16 @@
       "type": "Feature",
       "id": "SWE",
       "properties": {
-        "name": "Sweden"
+        "name": "Sweden",
+        "region": "Europe",
+        "iso": "SE",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -40412,7 +40856,16 @@
       "type": "Feature",
       "id": "SWZ",
       "properties": {
-        "name": "Swaziland"
+        "name": "Swaziland",
+        "region": "Africa",
+        "iso": "SZ",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -40470,7 +40923,16 @@
       "type": "Feature",
       "id": "SYR",
       "properties": {
-        "name": "Syria"
+        "name": "Syria",
+        "region": "Asia",
+        "iso": "SY",
+        "network_count": 1,
+        "2g": "f",
+        "3g": "f",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -40592,7 +41054,16 @@
       "type": "Feature",
       "id": "TCD",
       "properties": {
-        "name": "Chad"
+        "name": "Chad",
+        "region": "Africa",
+        "iso": "TD",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -40838,7 +41309,16 @@
       "type": "Feature",
       "id": "TGO",
       "properties": {
-        "name": "Togo"
+        "name": "Togo",
+        "region": "Africa",
+        "iso": "TG",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -40928,7 +41408,16 @@
       "type": "Feature",
       "id": "THA",
       "properties": {
-        "name": "Thailand"
+        "name": "Thailand",
+        "region": "tba",
+        "iso": "TH",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -41198,7 +41687,16 @@
       "type": "Feature",
       "id": "TJK",
       "properties": {
-        "name": "Tajikistan"
+        "name": "Tajikistan",
+        "region": "Asia",
+        "iso": "TJ",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -41376,7 +41874,16 @@
       "type": "Feature",
       "id": "TKM",
       "properties": {
-        "name": "Turkmenistan"
+        "name": "Turkmenistan",
+        "region": "Asia",
+        "iso": "TM",
+        "network_count": 2,
+        "2g": "f",
+        "3g": "f",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -41606,7 +42113,16 @@
       "type": "Feature",
       "id": "TLS",
       "properties": {
-        "name": "East Timor"
+        "name": "East Timor",
+        "region": "tba",
+        "iso": "TL",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -41664,7 +42180,16 @@
       "type": "Feature",
       "id": "TTO",
       "properties": {
-        "name": "Trinidad and Tobago"
+        "name": "Trinidad and Tobago",
+        "region": "North America",
+        "iso": "TT",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -41710,7 +42235,16 @@
       "type": "Feature",
       "id": "TUN",
       "properties": {
-        "name": "Tunisia"
+        "name": "Tunisia",
+        "region": "Africa",
+        "iso": "TN",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -41848,7 +42382,16 @@
       "type": "Feature",
       "id": "TUR",
       "properties": {
-        "name": "Turkey"
+        "name": "Turkey",
+        "region": "Europe",
+        "iso": "TR",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -42136,7 +42679,16 @@
       "type": "Feature",
       "id": "TWN",
       "properties": {
-        "name": "Taiwan"
+        "name": "Taiwan",
+        "region": "Asia",
+        "iso": "TW",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "t"
       },
       "geometry": {
         "type": "Polygon",
@@ -42186,7 +42738,16 @@
       "type": "Feature",
       "id": "TZA",
       "properties": {
-        "name": "United Republic of Tanzania"
+        "name": "United Republic of Tanzania",
+        "region": "Africa",
+        "iso": "TZ",
+        "network_count": 6,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -42396,7 +42957,16 @@
       "type": "Feature",
       "id": "UGA",
       "properties": {
-        "name": "Uganda"
+        "name": "Uganda",
+        "region": "Africa",
+        "iso": "UG",
+        "network_count": 5,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -42518,7 +43088,16 @@
       "type": "Feature",
       "id": "UKR",
       "properties": {
-        "name": "Ukraine"
+        "name": "Ukraine",
+        "region": "Europe",
+        "iso": "UA",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -42924,7 +43503,16 @@
       "type": "Feature",
       "id": "URY",
       "properties": {
-        "name": "Uruguay"
+        "name": "Uruguay",
+        "region": "South America",
+        "iso": "UY",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -43022,7 +43610,16 @@
       "type": "Feature",
       "id": "USA",
       "properties": {
-        "name": "United States of America"
+        "name": "United States of America",
+        "region": "North America",
+        "iso": "US",
+        "network_count": 13,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "t",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44846,7 +45443,16 @@
       "type": "Feature",
       "id": "UZB",
       "properties": {
-        "name": "Uzbekistan"
+        "name": "Uzbekistan",
+        "region": "Asia",
+        "iso": "UZ",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -45076,7 +45682,16 @@
       "type": "Feature",
       "id": "VEN",
       "properties": {
-        "name": "Venezuela"
+        "name": "Venezuela",
+        "region": "South America",
+        "iso": "VE",
+        "network_count": 1,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -45458,7 +46073,16 @@
       "type": "Feature",
       "id": "VNM",
       "properties": {
-        "name": "Vietnam"
+        "name": "Vietnam",
+        "region": "Asia",
+        "iso": "VN",
+        "network_count": 5,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -45648,7 +46272,16 @@
       "type": "Feature",
       "id": "VUT",
       "properties": {
-        "name": "Vanuatu"
+        "name": "Vanuatu",
+        "region": "Oceania",
+        "iso": "VU",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -45716,7 +46349,8 @@
       "type": "Feature",
       "id": "PSE",
       "properties": {
-        "name": "West Bank"
+        "name": "West Bank",
+        "region": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -45766,7 +46400,16 @@
       "type": "Feature",
       "id": "YEM",
       "properties": {
-        "name": "Yemen"
+        "name": "Yemen",
+        "region": "Asia",
+        "iso": "YE",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "f",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -45956,7 +46599,16 @@
       "type": "Feature",
       "id": "ZAF",
       "properties": {
-        "name": "South Africa"
+        "name": "South Africa",
+        "region": "Africa",
+        "iso": "ZA",
+        "network_count": 4,
+        "2g": "t",
+        "3g": "t",
+        "5g": "t",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -46348,7 +47000,16 @@
       "type": "Feature",
       "id": "ZMB",
       "properties": {
-        "name": "Zambia"
+        "name": "Zambia",
+        "region": "Africa",
+        "iso": "ZM",
+        "network_count": 3,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
@@ -46606,7 +47267,16 @@
       "type": "Feature",
       "id": "ZWE",
       "properties": {
-        "name": "Zimbabwe"
+        "name": "Zimbabwe",
+        "region": "Africa",
+        "iso": "ZW",
+        "network_count": 2,
+        "2g": "t",
+        "3g": "t",
+        "5g": "f",
+        "lte": "t",
+        "lte_m": "f",
+        "nb_iot": "f"
       },
       "geometry": {
         "type": "Polygon",
