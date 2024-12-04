@@ -6,17 +6,39 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-// GeoJSON URL (replace this with your own or a hosted version)
+// GeoJSON URL
 // const countriesGeoJSON = 'https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json';
 const countriesGeoJSON = 'countries.json';
 
 // Array to hold selected countries
 const selectedCountries = [];
+const onLoadCountries = [];
+
 
 // Fetch and add GeoJSON layer
 fetch(countriesGeoJSON) 
   .then(response => response.json())
   .then(data => {
+
+    // Show data on load
+    for (const item of data.features) {
+      const countryData = { 
+        'name': item.properties.name ? item.properties.name : '',
+        'region': item.properties.region ? item.properties.region : '',
+        'iso': item.properties.iso ? item.properties.iso : '',
+        'count': item.properties.network_count ? item.properties.network_count : '',
+        '2g': item.properties['2g'] === 't' ? true : false,
+        '3g': item.properties['3g'] === 't' ? true : false,
+        '5g': item.properties['5g'] === 't' ? true : false,
+        'lte': item.properties['lte'] === 't' ? true : false,
+        'lte_m': item.properties['lte_m'] === 't' ? true : false,
+        'nb_iot': item.properties['nb_iot'] === 't' ? true : false
+      };
+    
+      onLoadCountries.push(countryData);
+    }
+    showList(onLoadCountries);
+
     L.geoJSON(data, {
       style: {
         color: 'grey',
@@ -24,7 +46,10 @@ fetch(countriesGeoJSON)
         fillColor: '#3388ff',
         fillOpacity: 0.3,
       },
+
+      // Interaction on each Countries
       onEachFeature: function (feature, layer) {
+        
         // Track whether a country is "selected"
         let isSelected = false;
 
@@ -42,172 +67,101 @@ fetch(countriesGeoJSON)
               .setContent(`<b>${countryName}</b><br>${countryData}`)
               .openOn(map);
         });
-
         layer.on('mouseout', function () {
           if (!isSelected) {
               layer.setStyle({ fillOpacity: 0.3 });
           }
         });
 
-        // Toggle color on click
+        // Update data on click
         layer.on('click', function () {
           updateData(feature);
         });
         function updateData(entry) {
-          const countryName = entry.properties.name ? entry.properties.name : '';
-          const countryRegion = entry.properties.region ? entry.properties.region : '';
-          const countryIso = entry.properties.iso ? entry.properties.iso : '';
-          const networkCount = entry.properties.network_count ? entry.properties.network_count : '';
-          const country2g = entry.properties['2g'] === 't' ? true : false;
-          const country3g = entry.properties['3g'] === 't' ? true : false;
-          const country5g = entry.properties['5g'] === 't' ? true : false;
-          const countryLte = entry.properties['lte'] === 't' ? true : false;
-          const countryLteM = entry.properties['lte_m'] === 't' ? true : false;
-          const countryNbIot = entry.properties['nb_iot'] === 't' ? true : false;
           const countryData = { 
-                                'name': countryName,
-                                'region': countryRegion,
-                                'iso': countryIso,
-                                'count': networkCount,
-                                '2g': country2g,
-                                '3g': country3g,
-                                '5g': country5g,
-                                'lte': countryLte,
-                                'lte_m': countryLteM,
-                                'nb_iot': countryNbIot
-                              };
+            'name': entry.properties.name ? entry.properties.name : '',
+            'region': entry.properties.region ? entry.properties.region : '',
+            'iso': entry.properties.iso ? entry.properties.iso : '',
+            'count': entry.properties.network_count ? entry.properties.network_count : '',
+            '2g': entry.properties['2g'] === 't' ? true : false,
+            '3g': entry.properties['3g'] === 't' ? true : false,
+            '5g': entry.properties['5g'] === 't' ? true : false,
+            'lte': entry.properties['lte'] === 't' ? true : false,
+            'lte_m': entry.properties['lte_m'] === 't' ? true : false,
+            'nb_iot': entry.properties['nb_iot'] === 't' ? true : false
+          };
 
           isSelected = !isSelected;
 
           if (isSelected) {
-              layer.setStyle({ fillColor: 'red' }); // Change to red
-              selectedCountries.push(countryData); // Add to array
+              layer.setStyle({ fillColor: 'red' });
+              selectedCountries.push(countryData);
           } else {
-              layer.setStyle({ fillColor: '#3388ff' }); // Revert to original
+              layer.setStyle({ fillColor: '#3388ff' }); 
+              
               // Remove from array
               const index = selectedCountries.findIndex(
-                (item) => item.name === countryData.name // Replace 'id' with a unique property of your object
+                (item) => item.name === countryData.name // Replace 'id' with a unique property of object
             );
               if (index > -1) selectedCountries.splice(index, 1);
           }
 
-          // Log the array (or handle it as needed)
+          // Log the array
           console.log('Selected Countries:', selectedCountries);
-          const svgCheck = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 12L10 17L20 7" stroke="#14AE5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>`
-          const svgCross = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 6L6 18M6 6L18 18" stroke="#F24822" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>`
-
           document.querySelector('.countries-list').innerHTML = '';
-          for (const [index, item] of selectedCountries.entries()) {
-            document.querySelector('.countries-list').innerHTML += 
-            `<div class="countries-item">
-              <div class="countries-num">
-                <span>${index}</span>
-              </div>
-              <div class="countries-region">
-                <span>${item.region}</span>
-              </div>
-              <div class="countries-name">
-                <span>${item.name}</span>
-              </div>
-              <div class="countries-iso">
-                <span>${item.iso}</span>
-              </div>
-              <div class="countries-count">
-                <span>${item.count}</span>
-              </div>
-              <div class="countries-2g">
-                <span>${item['2g'] ? svgCheck : svgCross}</span>
-              </div>
-              <div class="countries-3g">
-                <span>${item['3g'] ? svgCheck : svgCross}</span>
-              </div>
-              <div class="countries-5g">
-                <span>${item['5g'] ? svgCheck : svgCross}</span>
-              </div>
-              <div class="countries-lte">
-                <span>${item['lte'] ? svgCheck : svgCross}</span>
-              </div>
-              <div class="countries-lte_m">
-                <span>${item['lte_m'] ? svgCheck : svgCross}</span>
-              </div>
-              <div class="countries-nb_iot">
-                <span>${item['nb_iot'] ? svgCheck : svgCross}</span>
-              </div>
-            </div>`
-          }
+          showList(selectedCountries);
+         
         }
       }
     }).addTo(map);
-    // Display all countries on page load
-    const allCountries = data.features.map((feature) => ({
-      name: feature.properties.name || '',
-      region: feature.properties.region || '',
-      iso: feature.properties.iso || '',
-      count: feature.properties.network_count || '',
-      '2g': feature.properties['2g'] === 't',
-      '3g': feature.properties['3g'] === 't',
-      '5g': feature.properties['5g'] === 't',
-      lte: feature.properties['lte'] === 't',
-      lte_m: feature.properties['lte_m'] === 't',
-      nb_iot: feature.properties['nb_iot'] === 't',
-    }));
 
-    updateCountriesList(allCountries);
+    // Print Data on table
+    function showList(arr) {
+      const svgCheck = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12L10 17L20 7" stroke="#14AE5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`
+      const svgCross = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6L6 18M6 6L18 18" stroke="#F24822" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`
+      for (const [index, item] of arr.entries()) {
+        document.querySelector('.countries-list').innerHTML += 
+        `<div class="countries-item">
+          <div class="countries-num">
+            <span>${index}</span>
+          </div>
+          <div class="countries-region">
+            <span>${item.region}</span>
+          </div>
+          <div class="countries-name">
+            <span>${item.name}</span>
+          </div>
+          <div class="countries-iso">
+            <span>${item.iso}</span>
+          </div>
+          <div class="countries-count">
+            <span>${item.count}</span>
+          </div>
+          <div class="countries-2g">
+            <span>${item['2g'] ? svgCheck : svgCross}</span>
+          </div>
+          <div class="countries-3g">
+            <span>${item['3g'] ? svgCheck : svgCross}</span>
+          </div>
+          <div class="countries-5g">
+            <span>${item['5g'] ? svgCheck : svgCross}</span>
+          </div>
+          <div class="countries-lte">
+            <span>${item['lte'] ? svgCheck : svgCross}</span>
+          </div>
+          <div class="countries-lte_m">
+            <span>${item['lte_m'] ? svgCheck : svgCross}</span>
+          </div>
+          <div class="countries-nb_iot">
+            <span>${item['nb_iot'] ? svgCheck : svgCross}</span>
+          </div>
+        </div>`
+      }
+    }
 })
 .catch(error => console.error('Error loading GeoJSON:', error));
 
-// Function to update countries list
-function updateCountriesList(countries) {
-  const svgCheck = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M5 12L10 17L20 7" stroke="#14AE5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>`;
-  const svgCross = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M18 6L6 18M6 6L18 18" stroke="#F24822" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>`;
-
-  const countriesList = document.querySelector('.countries-list');
-  countriesList.innerHTML = '';
-
-  countries.forEach((item, index) => {
-    countriesList.innerHTML += `
-      <div class="countries-item">
-        <div class="countries-num">
-          <span>${index + 1}</span>
-        </div>
-        <div class="countries-region">
-          <span>${item.region}</span>
-        </div>
-        <div class="countries-name">
-          <span>${item.name}</span>
-        </div>
-        <div class="countries-iso">
-          <span>${item.iso}</span>
-        </div>
-        <div class="countries-count">
-          <span>${item.count}</span>
-        </div>
-        <div class="countries-2g">
-          <span>${item['2g'] ? svgCheck : svgCross}</span>
-        </div>
-        <div class="countries-3g">
-          <span>${item['3g'] ? svgCheck : svgCross}</span>
-        </div>
-        <div class="countries-5g">
-          <span>${item['5g'] ? svgCheck : svgCross}</span>
-        </div>
-        <div class="countries-lte">
-          <span>${item.lte ? svgCheck : svgCross}</span>
-        </div>
-        <div class="countries-lte_m">
-          <span>${item.lte_m ? svgCheck : svgCross}</span>
-        </div>
-        <div class="countries-nb_iot">
-          <span>${item.nb_iot ? svgCheck : svgCross}</span>
-        </div>
-      </div>`;
-  });
-}
