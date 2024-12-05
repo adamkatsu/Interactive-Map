@@ -47,3 +47,8 @@
 .countries-nb_iot {
   width: 80px;
 }
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}

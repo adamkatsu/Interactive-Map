@@ -13,6 +13,7 @@ const countriesGeoJSON = 'countries.json';
 // Array to hold selected countries
 const selectedCountries = [];
 const onLoadCountries = [];
+const emptyCountries = [];
 
 
 // Fetch and add GeoJSON layer
@@ -38,6 +39,13 @@ fetch(countriesGeoJSON)
       onLoadCountries.push(countryData);
     }
     showList(onLoadCountries);
+    // Select All Button
+    document.getElementById('data-all').addEventListener('click', () => {
+      document.querySelector('.countries-list').innerHTML = '';
+      showList(onLoadCountries)
+    })
+
+    
 
     L.geoJSON(data, {
       style: {
@@ -48,7 +56,7 @@ fetch(countriesGeoJSON)
       },
 
       // Interaction on each Countries
-      onEachFeature: function (feature, layer) {
+      onEachFeature: function (feature, layer) {        
         
         // Track whether a country is "selected"
         let isSelected = false;
@@ -112,6 +120,28 @@ fetch(countriesGeoJSON)
           showList(selectedCountries);
          
         }
+
+        // Clear Button
+        document.getElementById('data-clear').addEventListener('click', () => {
+          document.querySelector('.countries-list').innerHTML = '';
+          layer.setStyle({ 
+            color: 'grey',
+            weight: 1,
+            fillColor: '#3388ff',
+            fillOpacity: 0.3
+          }); 
+          selectedCountries.length = 0;
+          isSelected = false;
+        })
+        
+        // Select All Button
+        document.getElementById('data-all').addEventListener('click', () => {
+          layer.setStyle({ 
+            fillOpacity: 0.7,
+            fillColor: 'red',
+          }); 
+          isSelected = true;
+        })
       }
     }).addTo(map);
 
@@ -127,7 +157,7 @@ fetch(countriesGeoJSON)
         document.querySelector('.countries-list').innerHTML += 
         `<div class="countries-item">
           <div class="countries-num">
-            <span>${index}</span>
+            <span>${index + 1}</span>
           </div>
           <div class="countries-region">
             <span>${item.region}</span>
@@ -162,6 +192,7 @@ fetch(countriesGeoJSON)
         </div>`
       }
     }
+    
 })
 .catch(error => console.error('Error loading GeoJSON:', error));
 
