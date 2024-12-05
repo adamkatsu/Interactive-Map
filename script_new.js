@@ -5,103 +5,13 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-
-// GeoJSON URL
-// const countriesGeoJSON = 'https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json';
 const countriesGeoJSON = 'countries.json';
 
 // Array to hold selected countries
 const selectedCountries = [];
 const onLoadCountries = [];
-const emptyCountries = [];
-
-// Add a reference to the GeoJSON layer
-let geojsonLayer;
-
-// Function to filter countries based on selected options and update map styles
-function applyFilters() {
-  const selectedFilters = [];
-  
-  // Collect selected checkboxes
-  document.querySelectorAll('.filter-options input[type="checkbox"]').forEach((checkbox) => {
-    if (checkbox.checked) {
-      selectedFilters.push(checkbox.value);
-    }
-  });
-
-  // Filter countries based on selected filters
-  const filteredCountries = onLoadCountries.filter((country) => {
-    return selectedFilters.every((filter) => country[filter] === true);
-  });
-
-  // Update the displayed list
-  document.querySelector('.countries-list').innerHTML = '';
-  showList(filteredCountries);
-
-  // Update map styles
-  geojsonLayer.eachLayer((layer) => {
-    const countryProps = layer.feature.properties;
-    const matchesFilters = selectedFilters.every((filter) => countryProps[filter] === 't'); // Assuming GeoJSON properties use 't' for true
-
-    // Change the style of the layer based on whether it matches the filters
-    // if (matchesFilters) {
-    //   layer.setStyle({
-    //     fillColor: 'red',
-    //     fillOpacity: 1
-    //   });
-    // } else {
-    //   layer.setStyle({
-    //     fillColor: '#3388ff',
-    //     fillOpacity: 0.3,
-    //   });
-    // }
-  });
-}
-
-// Fetch and add GeoJSON layer
-fetch(countriesGeoJSON)
-  .then((response) => response.json())
-  .then((data) => {
-    geojsonLayer = L.geoJSON(data, {
-      style: {
-        color: 'grey',
-        weight: 1,
-        fillColor: '#3388ff',
-        fillOpacity: 0.3,
-      },
-      onEachFeature: function (feature, layer) {
-        // Existing onEachFeature logic here...
-      },
-    }).addTo(map);
-
-    // Populate onLoadCountries with GeoJSON data
-    for (const item of data.features) {
-      onLoadCountries.push({
-        name: item.properties.name || '',
-        region: item.properties.region || '',
-        iso: item.properties.iso || '',
-        count: item.properties.network_count || '',
-        '2g': item.properties['2g'] === 't',
-        '3g': item.properties['3g'] === 't',
-        '5g': item.properties['5g'] === 't',
-        'lte': item.properties['lte'] === 't',
-        'lte_m': item.properties['lte_m'] === 't',
-        'nb_iot': item.properties['nb_iot'] === 't',
-      });
-    }
-
-    // Show the full list on load
-    showList(onLoadCountries);
-  })
-  .catch((error) => console.error('Error loading GeoJSON:', error));
-
-// Add event listeners to checkboxes for filtering
-document.querySelectorAll('.filter-options input[type="checkbox"]').forEach((checkbox) => {
-  checkbox.addEventListener('change', applyFilters);
-});
 
 
-// Fetch and add GeoJSON layer
 fetch(countriesGeoJSON) 
   .then(response => response.json())
   .then(data => {
@@ -197,31 +107,12 @@ fetch(countriesGeoJSON)
           document.querySelector('.countries-list').innerHTML = '';
           showList(selectedCountries);
         }
-
-        // Clear Button
-        document.getElementById('data-clear').addEventListener('click', () => {
-          document.querySelector('.countries-list').innerHTML = '';
-          layer.setStyle({ 
-            color: 'grey',
-            weight: 1,
-            fillColor: '#3388ff',
-            fillOpacity: 0.3
-          }); 
-          selectedCountries.length = 0;
-          isSelected = false;
-          document.querySelector('.item-count').innerHTML = '';
-        })
       }
     }).addTo(map);
     
 })
 .catch(error => console.error('Error loading GeoJSON:', error));
 
-// Select All Button
-document.getElementById('data-all').addEventListener('click', () => {
-  document.querySelector('.countries-list').innerHTML = '';
-  showList(onLoadCountries)
-})
 
 // Print Data on table
 function showList(arr) {
