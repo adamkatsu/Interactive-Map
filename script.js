@@ -144,9 +144,15 @@ fetch(countriesGeoJSON)
           if (!isSelected) {
               layer.setStyle({ fillOpacity: 0.7 });
           }
-
+          console.log(feature.properties);
           const countryName = feature.properties.name; // Assuming `name` property exists
-          const countryData = `Hello ${feature.properties.nickname ? feature.properties.nickname : countryName}`; // Replace with actual data source
+          const countryData = 
+            `${feature.properties['2g'] != 'f' ? '2G<br>' : ''}
+            ${feature.properties['3g'] != 'f' ? '3G<br>' : ''}
+            ${feature.properties['5g'] != 'f' ? '5G<br>' : ''}
+            ${feature.properties['lte'] != 'f' ? 'LTE<br>' : ''}
+            ${feature.properties['lte_m'] != 'f' ? 'LTE-M<br>' : ''}
+            ${feature.properties['nb_iot'] != 'f' ? 'NB-IOT<br>' : ''}`; // Replace with actual data source
 
           L.popup()
               .setLatLng(layer.getBounds().getCenter())
