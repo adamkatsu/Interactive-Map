@@ -39,13 +39,13 @@ fetch(countriesGeoJSON)
       onLoadCountries.push(countryData);
     }
     showList(onLoadCountries);
+
     // Select All Button
     document.getElementById('data-all').addEventListener('click', () => {
       document.querySelector('.countries-list').innerHTML = '';
       showList(onLoadCountries)
     })
 
-    
 
     L.geoJSON(data, {
       style: {
@@ -57,7 +57,6 @@ fetch(countriesGeoJSON)
 
       // Interaction on each Countries
       onEachFeature: function (feature, layer) {        
-        
         // Track whether a country is "selected"
         let isSelected = false;
 
@@ -118,7 +117,6 @@ fetch(countriesGeoJSON)
           console.log('Selected Countries:', selectedCountries);
           document.querySelector('.countries-list').innerHTML = '';
           showList(selectedCountries);
-         
         }
 
         // Clear Button
@@ -135,13 +133,13 @@ fetch(countriesGeoJSON)
         })
         
         // Select All Button
-        document.getElementById('data-all').addEventListener('click', () => {
-          layer.setStyle({ 
-            fillOpacity: 0.7,
-            fillColor: 'red',
-          }); 
-          isSelected = true;
-        })
+        // document.getElementById('data-all').addEventListener('click', () => {
+        //   layer.setStyle({ 
+        //     fillOpacity: 0.7,
+        //     fillColor: 'red',
+        //   }); 
+        //   isSelected = true;
+        // })
       }
     }).addTo(map);
 
