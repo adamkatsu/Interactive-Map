@@ -1,7 +1,8 @@
-var map = L.map('map').setView([0, 0], 2);
+var map = L.map('map').setView([40, 0], 1);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 5,
-  minZoom: 2,
+  minZoom: 1.5,
+  opacity: 1,
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
@@ -136,17 +137,17 @@ function toggleCountry(feature) {
 function featureStyle(feature) {
   const isActive = tempArray.some((c) => c.name === feature.properties.name);
   return {
-    color: 'grey',
+    color: '#666666',
     weight: 1,
-    fillColor: isActive ? 'red' : '#3388ff',
-    fillOpacity: isActive ? 0.7 : 0.3,
+    fillColor: isActive ? '#ffa500' : 'blue',
+    fillOpacity: isActive ? 1 : 0.2,
   };
 }
 
 // Apply filters
 function applyFilters() {
   const selectedFilters = [];
-  document.querySelectorAll('.filter-options input[type="checkbox"]').forEach((checkbox) => {
+  document.querySelectorAll('.filters-options input[type="checkbox"]').forEach((checkbox) => {
     if (checkbox.checked) selectedFilters.push(checkbox.value);
   });
 
@@ -161,12 +162,13 @@ function applyFilters() {
 
 // Show list in table
 function showList(arr) {
+
   if(tempArray.length == 0) {
     document.getElementById('data-clear').style.display = 'none';
   } else {
     document.getElementById('data-clear').style.display = 'block';
   }
-  
+
   const listContainer = document.querySelector('.countries-list');
   listContainer.innerHTML = '';
   const svgCheck = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,7 +236,7 @@ function showList(arr) {
 // Clear Data
 document.getElementById('data-clear').addEventListener('click', () => {
   // Uncheck all checkboxes
-  document.querySelectorAll('.filter-options input[type="checkbox"]').forEach((checkbox) => {
+  document.querySelectorAll('.filters-options input[type="checkbox"]').forEach((checkbox) => {
     checkbox.checked = false;
   });
 
@@ -245,8 +247,13 @@ document.getElementById('data-clear').addEventListener('click', () => {
 });
 
 // Add event listeners for filters
-document.querySelectorAll('.filter-options input[type="checkbox"]').forEach((checkbox) => {
+document.querySelectorAll('.filters-options input[type="checkbox"]').forEach((checkbox) => {
   checkbox.addEventListener('change', applyFilters);
 });
 
 
+// Open / Close Filter
+
+document.querySelector('.filters-head').addEventListener('click', () => {
+  document.querySelector('.filters-main').classList.toggle('filters-active');
+})

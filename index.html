@@ -19,8 +19,49 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="map"></div>
-  <div class="main-content">
+  <section>
+    <div class="container">
+      <div id="map"></div>
+      <div class="filters">
+        <div class="filters-head">
+          <span>Filters</span>
+          <span>v</span>
+        </div>
+        <div class="filters-main">
+          <div class="filters-details">
+            <span class="item-count"></span>
+            <button id="data-clear">Clear</button>
+          </div>
+          <!-- <button id="data-all">Select All</button> -->
+          <div class="filters-options">
+            <label>
+              <input type="checkbox" id="filter-2g" value="2g"> 
+              2G
+            </label>
+            <label>
+              <input type="checkbox" id="filter-3g" value="3g"> 
+              3G
+            </label>
+            <label>
+              <input type="checkbox" id="filter-5g" value="5g"> 
+              5G
+            </label>
+            <label>
+              <input type="checkbox" id="filter-lte" value="lte"> 
+              LTE
+            </label>
+            <label>
+              <input type="checkbox" id="filter-lte-m" value="lte_m">
+              LTE-M
+            </label>
+            <label>
+              <input type="checkbox" id="filter-nb-iot" value="nb_iot">
+              NB-IOT
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="countries-table">
       <div class="countries-head">
         <div class="countries-item">
@@ -62,20 +103,7 @@
       <ul class="countries-list">
       </ul>
     </div>
-    <div class="filters">
-      <span class="item-count"></span>
-      <button id="data-clear">Clear</button>
-      <!-- <button id="data-all">Select All</button> -->
-      <div class="filter-options">
-        <label><input type="checkbox" id="filter-2g" value="2g"> 2G</label>
-        <label><input type="checkbox" id="filter-3g" value="3g"> 3G</label>
-        <label><input type="checkbox" id="filter-5g" value="5g"> 5G</label>
-        <label><input type="checkbox" id="filter-lte" value="lte"> LTE</label>
-        <label><input type="checkbox" id="filter-lte-m" value="lte_m"> LTE-M</label>
-        <label><input type="checkbox" id="filter-nb-iot" value="nb_iot"> NB-IOT</label>
-      </div>
-    </div>
-  </div>
+  </section>
   
   
 
