@@ -59,46 +59,46 @@ function applyFilters() {
 }
 
 // Fetch and add GeoJSON layer
-fetch(countriesGeoJSON)
-  .then((response) => response.json())
-  .then((data) => {
-    geojsonLayer = L.geoJSON(data, {
-      style: {
-        color: 'grey',
-        weight: 1,
-        fillColor: '#3388ff',
-        fillOpacity: 0.3,
-      },
-      onEachFeature: function (feature, layer) {
-        // Existing onEachFeature logic here...
-      },
-    }).addTo(map);
+// fetch(countriesGeoJSON)
+//   .then((response) => response.json())
+//   .then((data) => {
+//     geojsonLayer = L.geoJSON(data, {
+//       style: {
+//         color: 'grey',
+//         weight: 1,
+//         fillColor: '#3388ff',
+//         fillOpacity: 0.3,
+//       },
+//       onEachFeature: function (feature, layer) {
+//         // Existing onEachFeature logic here...
+//       },
+//     }).addTo(map);
 
-    // Populate onLoadCountries with GeoJSON data
-    for (const item of data.features) {
-      onLoadCountries.push({
-        name: item.properties.name || '',
-        region: item.properties.region || '',
-        iso: item.properties.iso || '',
-        count: item.properties.network_count || '',
-        '2g': item.properties['2g'] === 't',
-        '3g': item.properties['3g'] === 't',
-        '5g': item.properties['5g'] === 't',
-        'lte': item.properties['lte'] === 't',
-        'lte_m': item.properties['lte_m'] === 't',
-        'nb_iot': item.properties['nb_iot'] === 't',
-      });
-    }
+//     // Populate onLoadCountries with GeoJSON data
+//     for (const item of data.features) {
+//       onLoadCountries.push({
+//         name: item.properties.name || '',
+//         region: item.properties.region || '',
+//         iso: item.properties.iso || '',
+//         count: item.properties.network_count || '',
+//         '2g': item.properties['2g'] === 't',
+//         '3g': item.properties['3g'] === 't',
+//         '5g': item.properties['5g'] === 't',
+//         'lte': item.properties['lte'] === 't',
+//         'lte_m': item.properties['lte_m'] === 't',
+//         'nb_iot': item.properties['nb_iot'] === 't',
+//       });
+//     }
 
-    // Show the full list on load
-    showList(onLoadCountries);
-  })
-  .catch((error) => console.error('Error loading GeoJSON:', error));
+//     // Show the full list on load
+//     showList(onLoadCountries);
+//   })
+//   .catch((error) => console.error('Error loading GeoJSON:', error));
 
-// Add event listeners to checkboxes for filtering
-document.querySelectorAll('.filter-options input[type="checkbox"]').forEach((checkbox) => {
-  checkbox.addEventListener('change', applyFilters);
-});
+// // Add event listeners to checkboxes for filtering
+// document.querySelectorAll('.filter-options input[type="checkbox"]').forEach((checkbox) => {
+//   checkbox.addEventListener('change', applyFilters);
+// });
 
 
 // Fetch and add GeoJSON layer
