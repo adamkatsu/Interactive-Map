@@ -161,6 +161,12 @@ function applyFilters() {
 
 // Show list in table
 function showList(arr) {
+  if(tempArray.length == 0) {
+    document.getElementById('data-clear').style.display = 'none';
+  } else {
+    document.getElementById('data-clear').style.display = 'block';
+  }
+  
   const listContainer = document.querySelector('.countries-list');
   listContainer.innerHTML = '';
   const svgCheck = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -213,17 +219,17 @@ function showList(arr) {
 }
 
 // Select All
-document.getElementById('data-all').addEventListener('click', () => {
-  // Check all checkboxes
-  document.querySelectorAll('.filter-options input[type="checkbox"]').forEach((checkbox) => {
-    checkbox.checked = true;
-  });
+// document.getElementById('data-all').addEventListener('click', () => {
+//   // Check all checkboxes
+//   document.querySelectorAll('.filter-options input[type="checkbox"]').forEach((checkbox) => {
+//     checkbox.checked = true;
+//   });
 
-  // Copy all countries to tempArray
-  tempArray = [...mainArray];
-  updateMap();
-  showList(tempArray);
-});
+//   // Copy all countries to tempArray
+//   tempArray = [...mainArray];
+//   updateMap();
+//   showList(tempArray);
+// });
 
 // Clear Data
 document.getElementById('data-clear').addEventListener('click', () => {
@@ -242,3 +248,5 @@ document.getElementById('data-clear').addEventListener('click', () => {
 document.querySelectorAll('.filter-options input[type="checkbox"]').forEach((checkbox) => {
   checkbox.addEventListener('change', applyFilters);
 });
+
+
