@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
@@ -50,6 +51,13 @@ section {
   height: auto;
   padding: 24px 16px;
   border-top: 1px solid #e3e3e3;
+  transition: all .2s ease;
+}
+.filters:has(.filters-active) .filters-head svg {
+  transform: rotate(180deg);
+  transition: all .2s ease;
+}
+.filters-head svg {
   transition: all .2s ease;
 }
 .filters-details,
@@ -158,4 +166,23 @@ section {
   display: flex;
   flex-direction: row;
   gap: 32px;
+}
+
+.popup-inner {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+}
+.popup-title {
+  font-weight: 600;
+  font-size: 14px;
+  max-width: 100px;
+}
+.popup-list {
+  margin-left: -4px;
+  font-size: 14px;
+  font-weight: 500;
 }

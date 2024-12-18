@@ -1,4 +1,14 @@
-var map = L.map('map').setView([40, 0], 1);
+// var map = L.map('map').setView([40, 0], 1);
+var map = L.map('map', {
+  center: [40, 0], // Center the map
+  zoom: 1,         // Initial zoom level
+  maxBounds: [
+    [-85, -180], // Southwest corner of the bounding box
+    [85, 180]    // Northeast corner of the bounding box
+  ],
+  maxBoundsViscosity: 1.0, // Smooth panning at bounds edge
+});
+
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 5,
   minZoom: 1.5,
@@ -95,19 +105,47 @@ function updateMap() {
       // Hover and Popup
       layer.on('mouseover', () => {
         const countryData = `
-          ${feature.properties['2g'] ? '2G<br>' : ''}
-          ${feature.properties['3g'] ? '3G<br>' : ''}
-          ${feature.properties['5g'] ? '5G<br>' : ''}
-          ${feature.properties['lte'] ? 'LTE<br>' : ''}
+          ${feature.properties['2g'] ? '• 2G<br>' : ''}
+          ${feature.properties['3g'] ? '• 3G<br>' : ''}
+          ${feature.properties['5g'] ? '• 5G<br>' : ''}
+          ${feature.properties['lte'] ? '• LTE<br>' : ''}
+          ${feature.properties['lte_m'] ? '• LTE-M<br>' : ''}
+          ${feature.properties['nb_iot'] ? '• NB-IOT<br>' : ''}
         `;
-        L.popup()
-          .setLatLng(layer.getBounds().getCenter())
-          .setContent(`<b>${countryName}</b><br>${countryData}`)
-          .openOn(map);
+
+        const popup = L.popup({
+          closeButton: false,
+          className: 'floating-popup',
+          autoClose: false,
+          closeOnClick: false,
+        });
+      
+        // Add mousemove event to make the popup follow the cursor
+        layer.on('mousemove', (event) => {
+          popup
+            .setLatLng(event.latlng)
+            .setContent(`
+              <div class="popup-inner">
+                <span class="popup-title">${countryName}</span>
+                <span class="popup-list">${countryData}</span>
+              </div>
+            `)
+            .openOn(map);
+        });
+      
+        // Close the popup when the mouse leaves the layer
+        layer.on('mouseout', () => {
+          map.closePopup();
+          layer.off('mousemove');
+        });
       });
 
       // Toggle country selection
-      layer.on('click', () => toggleCountry(feature));
+      layer.on('click', () => {
+        toggleCountry(feature)
+        map.closePopup();
+        layer.off('mousemove');
+      });
     },
   }).addTo(map);
 }
