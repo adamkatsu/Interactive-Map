@@ -101,16 +101,18 @@ function updateMap() {
     style: featureStyle,
     onEachFeature: (feature, layer) => {
       const countryName = feature.properties.name;
+      const countryAmount = feature.properties.count;
 
       // Hover and Popup
       layer.on('mouseover', () => {
+        console.log(feature)
         const countryData = `
-          ${feature.properties['2g'] ? '• 2G<br>' : ''}
-          ${feature.properties['3g'] ? '• 3G<br>' : ''}
-          ${feature.properties['5g'] ? '• 5G<br>' : ''}
-          ${feature.properties['lte'] ? '• LTE<br>' : ''}
-          ${feature.properties['lte_m'] ? '• LTE-M<br>' : ''}
-          ${feature.properties['nb_iot'] ? '• NB-IOT<br>' : ''}
+          ${feature.properties['2g'] ? '2G,' : ''}
+          ${feature.properties['3g'] ? '3G,' : ''}
+          ${feature.properties['5g'] ? '5G,' : ''}
+          ${feature.properties['lte'] ? 'LTE,' : ''}
+          ${feature.properties['lte_m'] ? 'LTE-M,' : ''}
+          ${feature.properties['nb_iot'] ? 'NB-IOT,' : ''}
         `;
 
         const popup = L.popup({
@@ -127,7 +129,14 @@ function updateMap() {
             .setContent(`
               <div class="popup-inner">
                 <span class="popup-title">${countryName}</span>
-                <span class="popup-list">${countryData}</span>
+                <span class="popup-list">
+                  <strong>Available Technologies:</strong><br>
+                  ${countryData}
+                </span>
+                <span class="popup-list">
+                  <strong># of Networks:</strong><br>
+                  ${countryAmount}
+                </span>
               </div>
             `)
             .openOn(map);
