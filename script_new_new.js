@@ -1,7 +1,7 @@
 // var map = L.map('map').setView([40, 0], 1);
 var map = L.map('map', {
   center: [40, 0], // Center the map
-  zoom: 1,         // Initial zoom level
+  zoom: 2,         // Initial zoom level
   maxBounds: [
     [-85, -180], // Southwest corner of the bounding box
     [85, 180]    // Northeast corner of the bounding box
@@ -11,7 +11,7 @@ var map = L.map('map', {
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 5,
-  minZoom: 1.5,
+  minZoom: 2,
   opacity: 1,
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
