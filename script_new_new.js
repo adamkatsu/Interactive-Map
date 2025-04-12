@@ -9,12 +9,15 @@ var map = L.map('map', {
   maxBoundsViscosity: 1.0, // Smooth panning at bounds edge
 });
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('', {
   maxZoom: 5,
   minZoom: 2,
   opacity: 1,
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  attribution: '' // No attribution for a blank background
 }).addTo(map);
+
+// Add a white background to the map container
+document.getElementById('map').style.backgroundColor = 'white';
 
 // GeoJSON URL
 const countriesGeoJSON = 'countries.json';
