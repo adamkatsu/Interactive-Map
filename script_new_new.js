@@ -187,9 +187,9 @@ function toggleCountry(feature) {
 function featureStyle(feature) {
   const isActive = tempArray.some((c) => c.name === feature.properties.name);
   return {
-    color: '#666666',
+    color: '#ffffff',
     weight: 1,
-    fillColor: isActive ? '#ffa500' : 'blue',
+    fillColor: isActive ? '#F69322' : '4D4D4F',
     fillOpacity: isActive ? 1 : 0.2,
   };
 }
