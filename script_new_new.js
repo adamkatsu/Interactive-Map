@@ -205,6 +205,7 @@ function applyFilters() {
   tempArray = mainArray.filter((country) =>
     selectedFilters.every((filter) => country[filter] === true)
   );
+  console.log(tempArray)
 
   updateMap();
   showList(tempArray);
