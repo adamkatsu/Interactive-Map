@@ -21,7 +21,7 @@ section {
   /* background-color: white; */
 }
 .filters {
-  position: absolute;
+  position: relative;
   bottom: 24px;
   left: 24px;
   z-index: 9999;
@@ -32,7 +32,7 @@ section {
   justify-content: flex-start;
   align-items: stretch;
   border-radius: 8px;
-  max-width: 360px;
+  /* max-width: 360px; */
   transition: all .3s ease;
 }
 .filters-main {
@@ -43,7 +43,7 @@ section {
   border-top: 0px solid #e3e3e3;
   transition: all .2s ease;
   gap: 32px;
-  height: 0;
+  height: auto;
   padding: 0px 16px;
   overflow: hidden;
 }
@@ -66,6 +66,7 @@ section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  display: none;
 }
 .filters-head {
   padding: 20px 16px;
@@ -75,30 +76,36 @@ section {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 .filters-options label {
-  background-color: white;
-  width: 100px;
-  padding: 10px;
-  border-radius: 1000px;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  cursor: pointer;  
-}
-.filters-options label:has(input[type='checkbox']:checked) {
+  gap: 8px;
+  cursor: pointer;  .filters-options label:has(input[type='checkbox']:checked) {
   background-color: orange;
   color: white;
   border: 1px solid orange;
 }
+}
 .filters-options input {
   opacity: 0;
   position: absolute;
+}
+.checkmark {
+  height: 20px;
+  width: 20px;
+  border: 2px solid rgb(77, 77, 79, 0.1);
+  border-radius: 4px;
+}
+.filters-options label:has(input[type='checkbox']:checked) .checkmark{
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
 }
 #data-clear {
   border: none;
@@ -120,27 +127,37 @@ section {
 }
 .countries-table {
   width: fit-content;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 .countries-head {
-  background-color: rgba(255, 166, 0, 0.75);
+  padding: 8px;
+  padding-bottom: 0px;
 }
+.countries-head .countries-item {
+  border: none;
+}
+
 .countries-list {
-  max-height: 320px;
+  max-height: 464px;
   overflow: scroll;
+  border: 1px solid #DEDEDE;
+  border-radius: 12px;
+  padding: 8px;
+}
+.countries-list .countries-item {
+  background-color: #F6F6F6;
+  border-radius: 4px
+}
+.countries-list .countries-item:nth-child(2n) {
+  background-color: #ffffff;
 }
 .countries-item {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 166, 0, 0.2);
-
 }
 .countries-item div {
   padding: 8px 8px;
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  height: 64px;
 }
 .countries-item div:last-child {
   border-right: none;
@@ -149,18 +166,31 @@ section {
 .countries-region {
   width: 160px;
 }
-.countries-count {
-  width: 120px;
+.countries-num {
+  width: 36px;
 }
 .countries-iso,
-.countries-num,
 .countries-2g,
+.countries-count,
 .countries-3g,
 .countries-5g,
 .countries-lte,
 .countries-lte_m,
 .countries-nb_iot {
   width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.countries-num,
+.countries-region,
+.countries-name {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.countries-count {
+  width: 200px;
 }
 .main-content {
   display: flex;

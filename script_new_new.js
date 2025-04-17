@@ -108,7 +108,7 @@ function updateMap() {
 
       // Hover and Popup
       layer.on('mouseover', () => {
-        console.log(feature)
+        // console.log(feature)
         const countryData = `
           ${feature.properties['2g'] ? '2G,' : ''}
           ${feature.properties['3g'] ? '3G,' : ''}
@@ -167,8 +167,8 @@ function updateMap() {
 function toggleCountry(feature) {
   const countryName = feature.properties.name;
   const exists = tempArray.find((c) => c.name === countryName);
-  console.log(countryName)
-  console.log(tempArray)
+  // console.log(countryName)
+  // console.log(tempArray)
 
   if (exists) {
     // Remove if already in tempArray
@@ -190,7 +190,7 @@ function featureStyle(feature) {
     color: '#ffffff',
     weight: 1,
     fillColor: isActive ? '#F69322' : '4D4D4F',
-    fillOpacity: isActive ? 1 : 0.2,
+    fillOpacity: isActive ? 0.9 : 0.2,
   };
 }
 
