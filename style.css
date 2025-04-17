@@ -86,11 +86,13 @@ section {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  cursor: pointer;  .filters-options label:has(input[type='checkbox']:checked) {
+  cursor: pointer;  
+}
+.filters-options label:has(input[type='checkbox']:checked) {
   background-color: orange;
   color: white;
   border: 1px solid orange;
-}
+
 }
 .filters-options input {
   opacity: 0;
